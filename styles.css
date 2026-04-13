@@ -1639,7 +1639,6 @@ animation: lineReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.72s forwards;
 
 /* mobile */
 @media (max-width: 991px) {
-@media (max-width: 991px) {
   #main-nav {
     padding: 0.5rem 1rem;
     position: relative;
@@ -1748,7 +1747,7 @@ animation: lineReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.72s forwards;
     grid-template-columns: 0.7fr 1fr 0.7fr;
   }
 }
-}
+
 
 @media (max-width: 960px) {
  .hero-text {
