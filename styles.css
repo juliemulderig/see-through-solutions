@@ -536,7 +536,7 @@ animation: lineReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.72s forwards;
   user-select: none;
   -webkit-user-drag: none;
   pointer-events: none;
-  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.22));
+  /* filter: drop-shadow(0 6px 10px rgba(0,0,0,0.22)); */
 }
 /* 
 .magic-clean-text {
