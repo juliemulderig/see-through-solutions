@@ -2767,7 +2767,7 @@ animation: lineReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.72s forwards;
 }
 
 .contact-image-grid {
-  max-width: 3900px;
+  max-width: 390px;
   min-height: 280px;
 }
 
@@ -2808,11 +2808,16 @@ animation: lineReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.72s forwards;
   }
 }
 
-.contact-service-image,
-.contact-service-label,
-.contact-estimate-icon,
-.contact-estimate-header h1 {
-  opacity: 1 !important;
-  transform: none !important;
+@media (max-width: 768px) {
+  .contact-estimate-icon,
+  .contact-estimate-header h1,
+  .contact-service-label {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .contact-service-image {
+    transform: none !important;
+  }
 }
 
