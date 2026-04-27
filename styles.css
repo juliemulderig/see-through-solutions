@@ -2808,16 +2808,11 @@ animation: lineReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.72s forwards;
   }
 }
 
-@media (max-width: 768px) {
-  .contact-estimate-icon,
-  .contact-estimate-header h1,
-  .contact-service-label {
-    opacity: 1 !important;
-    transform: none !important;
-  }
-
-  .contact-service-image {
-    transform: none !important;
-  }
+.contact-service-image,
+.contact-service-label,
+.contact-estimate-icon,
+.contact-estimate-header h1 {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
 }
-
