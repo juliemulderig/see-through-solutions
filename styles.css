@@ -2393,7 +2393,6 @@ animation: lineReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.72s forwards;
   }
 
   .contact-estimate-header {
-    /* flex-direction: column; */
     gap: 0.5rem;
     margin: 4rem 0 3.7rem 0;
   }
@@ -2416,7 +2415,6 @@ animation: lineReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.72s forwards;
     width: 50%;
   }
 
-  /* Mobile fading service image card */
   .contact-image-strip {
     overflow: visible;
     margin: 2.5rem auto 1.5rem;
@@ -2424,39 +2422,34 @@ animation: lineReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.72s forwards;
   }
 
   .contact-image-grid {
-    display: grid;
-    grid-template-columns: 1fr;
     max-width: 470px;
     margin: 0 auto;
     position: relative;
-    min-height: 250px;
+    min-height: 340px;
     overflow: visible;
   }
 
-  .contact-image-strip.animate-in .contact-service-image,
   .contact-service-image {
-    grid-area: 1 / 1;
+    position: absolute;
+    inset: 0;
     opacity: 0;
     transform: none;
     border-radius: 20px;
     overflow: hidden;
-    animation: mobileServiceFade 24s infinite ease-in-out;
+    animation: mobileServiceFade 18s infinite ease-in-out;
   }
 
-.contact-image-strip.animate-in .contact-service-image:nth-child(1),
-.contact-service-image:nth-child(1) {
-  animation-delay: 8s; /* garage second */
-}
+  .contact-service-image:nth-child(1) {
+    animation-delay: 6s; /* garage second */
+  }
 
-.contact-image-strip.animate-in .contact-service-image:nth-child(2),
-.contact-service-image:nth-child(2) {
-  animation-delay: 0s; /* windows first */
-}
+  .contact-service-image:nth-child(2) {
+    animation-delay: 0s; /* windows first */
+  }
 
-.contact-image-strip.animate-in .contact-service-image:nth-child(3),
-.contact-service-image:nth-child(3) {
-  animation-delay: 16s; /* gutter third */
-}
+  .contact-service-image:nth-child(3) {
+    animation-delay: 12s; /* gutter third */
+  }
 
   .contact-service-image img {
     width: 100%;
@@ -2466,22 +2459,17 @@ animation: lineReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.72s forwards;
   }
 
   .contact-service-label {
-      min-height: 72px;
-  padding: 0.5rem 0.85rem;
-  font-size: clamp(1.35rem, 5vw, 1.65rem);
-  line-height: 1.15;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  opacity: 1;
-  transform: none;
+    min-height: 72px;
+    padding: 0.5rem 0.85rem;
+    font-size: clamp(1.35rem, 5vw, 1.65rem);
+    line-height: 1.15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+    transform: none;
   }
-  .contact-estimate-header h1 {
-        font-size: 2.5rem;
-    }
 }
 
 @keyframes mobileServiceFade {
@@ -2489,11 +2477,11 @@ animation: lineReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.72s forwards;
     opacity: 0;
   }
 
-  10% {
+  8% {
     opacity: 1;
   }
 
-  28% {
+  30% {
     opacity: 1;
   }
 
@@ -2504,8 +2492,6 @@ animation: lineReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.72s forwards;
   100% {
     opacity: 0;
   }
-
-  
 }
 
 @media (max-width: 600px) {
